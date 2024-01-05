@@ -4,7 +4,7 @@ import { HeroSection } from "@/components/sections/hero";
 import { AboutSection } from "@/components/sections/about";
 import { ServiceSection } from "@/components/sections/services";
 
-import bg from '../../public/images/apa.webp';
+import bg from '@/../public/images/apa.webp';
 
 export default function Home() {
 
