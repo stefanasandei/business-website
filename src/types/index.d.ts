@@ -12,11 +12,20 @@ export type SiteConfig = {
     url: string
     ogImage: string
     links: {
-        twitter: string
-        github: string
+        facebook: string
     }
 }
 
 export type BaseConfig = {
     mainNav: NavItem[]
 }
+
+export type ServiceItem = {
+    name: string;
+    description: string;
+    photo: string;
+};
+
+export type ServiceConfig = {
+    services: ServiceItem[]
+};

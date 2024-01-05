@@ -1,26 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { MainNav } from "@/components/main-nav";
 import { HeroSection } from "@/components/sections/hero";
-import { Button } from "@/components/ui/button";
-import { baseConfig } from "@/config/base";
+import { AboutSection } from "@/components/sections/about";
+import { ServiceSection } from "@/components/sections/services";
+
 import bg from '../../public/images/apa.webp';
 
 export default function Home() {
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-40 w-full bg-background/50 backdrop-blur-md">
-        <div className="container flex h-16 items-center space-x-4 justify-between sm:space-x-0">
-          <MainNav items={baseConfig.mainNav} />
-          <nav className="flex space-x-4">
-            <Button>Programeaza-te!</Button>
-          </nav>
-        </div>
-      </header>
+    <main>
       <div
-        className="absolute inset-x-0 -z-10 overflow-hidden"
+        className="absolute inset-x-0 inset-y-0 -z-10 overflow-hidden"
         style={{
           background: `url(${bg.src}) no-repeat 50% fixed`,
           backgroundSize: "cover",
@@ -29,10 +20,16 @@ export default function Home() {
         }}
         aria-hidden="true"
       />
-      <div className="container flex-1">
+      <div className="container flex-1 min-h-[100vh]">
         <HeroSection />
       </div>
-    </div>
+      <div className="container flex-1">
+        <AboutSection />
+      </div>
+      <div className="container flex-1">
+        <ServiceSection />
+      </div>
+    </main>
   );
 }
 

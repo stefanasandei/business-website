@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion"
 
 export const HeroSection = () => {
-    return <div className="relative overflow-hidden">
+    return <section className="relative overflow-hidden">
         <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-56">
             <motion.div initial={{ opacity: 0, y: -100 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -30,5 +30,5 @@ export const HeroSection = () => {
                 </div>
             </motion.div>
         </div>
-    </div>;
+    </section>;
 }

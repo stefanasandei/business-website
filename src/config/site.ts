@@ -3,11 +3,10 @@ import { type SiteConfig } from "@/types"
 export const siteConfig: SiteConfig = {
     name: "Oana Asandei",
     description:
-        "An open source application built using the new router, server components and everything new in Next.js 13.",
-    url: "https://tx.shadcn.com",
-    ogImage: "https://tx.shadcn.com/og.jpg",
+        "descriere",
+    url: "https://pentru-sufletul-tau.ro",
+    ogImage: "https://pentru-sufletul-tau.ro/og.jpg",
     links: {
-        twitter: "https://twitter.com/shadcn",
-        github: "https://github.com/shadcn/taxonomy",
+        facebook: "todo verderoz",
     },
 }
