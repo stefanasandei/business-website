@@ -1,7 +1,10 @@
-"use client";
+import AdminLogin from "@/components/sections/admin-login";
+import { api } from "@/trpc/server";
 
-export default function Admin() {
-    return <main>
-        admin
-    </main>;
+export default async function AdminDashboard() {
+    const isLoggedIn = await api.admin.isLoggedIn.query();
+    if (!isLoggedIn)
+        return <AdminLogin />;
+
+    return <main>Admin</main>;
 }
